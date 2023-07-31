@@ -1,3 +1,72 @@
-const CLI = require("./lib/cli.js");
+const inquirer = require("inquirer");
+const fs = require("fs");
+const { Square, Circle, Triangle } = require("./lib/shapes");
 
-new CLI().run()
+function writeToFile(fileName, questions) {
+
+    let svgString = "";
+    svgString =
+    '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">';
+    svgString += "<g>";
+    svgString += `${questions.shape}`;
+
+    let shapeType;
+    if (questions.shape === "Triangle") {
+        shapeType = new Triangle();
+        svgString += `<polygon points="150, 18 244, 182 56, 182" fill="${questions.shapeColor}"/>`;
+    } else if (questions.shape === "Square") {
+        shapeType = new Square();
+        svgString += `<rect x="73" y="40" width="160" height="160" fill="${questions.shapeColor}"/>`;
+      } else {
+        shapeType = new Circle();
+        svgString += `<circle cx="150" cy="115" r="80" fill="${questions.shapeColor}"/>`;
+    }
+
+    svgString += `<text x="150" y="130" text-anchor="middle" font-size="50" fill="${questions.textColor}">${questions.text}</text>`;
+    svgString += "</g>";
+    svgString += "</svg>";
+
+    fs.writeFile(fileName, svgString, (err) => {
+        err ? console.log(err) : console.log("Generated logo.svg");
+      });
+}
+
+function askQuestions() {
+    inquirer
+      .prompt([
+        {
+          type: "input",
+          message:
+            "Enter text for the logo (Must not be more than 3 characters)",
+          name: "text",
+        },
+        {
+          type: "input",
+          message:
+            "Enter a text color",
+          name: "textColor",
+        },
+        {
+          type: "list",
+          message: "Select a shape for the logo",
+          choices: ["Square", "Circle", "Triangle"],
+          name: "shape",
+        },
+        {
+          type: "input",
+          message:
+            "Enter a shape color",
+          name: "shapeColor",
+        },
+      ])
+      .then((questions) => {
+        if (questions.text.length > 3) {
+          console.log("Please enter no more than 3 characters");
+          askQuestions();
+        } else {
+          writeToFile("logo.svg", questions);
+        }
+      });
+  }
+
+askQuestions();
