@@ -27,7 +27,7 @@ The SVG Logo Maker includes
 <h4>&#x2022; Then shape (Square, Circle and Triangle) </h4> 
 <h4>&#x2022; Then shape color using a color keyword (OR a hexadecimal number) </h4> 
 <h4>&#x2022; When all inputs are entered a SVG file called 'logo.svg' is generated with the output text "Generated logo.svg", the file is a 300x200 pixel image </h4> 
-<h4>&#x2022; When you run a test using Jest it passes it </h4> 
+<h4>&#x2022; When you run a unit test using Jest it passes it </h4> 
 
 This was built using Node.js, Javascript, Inquirer, Jest and love.
 
