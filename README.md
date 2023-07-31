@@ -9,7 +9,9 @@ https://github.com/YJPuk/SVGLogoMaker/blob/main/walkthrough.gif
 ![User Inputs via CLI.](./walkthrough.gif)
 
 # Sample Logo file: 
-![Sample](./logo.svg)
+![Circle](./Samples/logo1.svg)
+![Square](./Samples/logo2.svg)
+![Triangle](./Samples/logo3.svg)
 
 
 <hr>
