@@ -1,5 +1,35 @@
 # 10 Object-oriented Programming: SVG Logo Maker
 
+<hr>
+
+# Walkthrough Video/Gif link: 
+https://github.com/YJPuk/SVGLogoMaker/blob/main/walkthrough.gif
+
+# Walkthrough Gif:
+![User Inputs via CLI.](./walkthrough.gif)
+
+# Sample Logo file:
+https://github.com/YJPuk/SVGLogoMaker/blob/main/logo.svg
+
+
+<hr>
+
+Description
+
+As coding student I'm trying to create a simple SVG Logo maker application that utilizes Node.js using Inquirer and Jest to match the Acceptance Criteria listed in the task below. 
+
+The SVG Logo Maker includes
+<h4>&#x2022; A command-line application that accepts user inputs </h4> 
+<h4>&#x2022; You are prompted for text up to 3 characters </h4> 
+<h4>&#x2022; Then text color to enter a color keyword (OR a hexadecimal number) </h4> 
+<h4>&#x2022; Then shape (Square, Circle and Triangle) </h4> 
+<h4>&#x2022; Then shape color using a color keyword (OR a hexadecimal number) </h4> 
+<h4>&#x2022; When all inputs are entered a SVG file called 'logo.svg' is generated with the output text "Generated logo.svg", the file is a 300x200 pixel image </h4> 
+
+This was built using Node.js, Javascript, Inquirer, Jest and love.
+
+<hr>
+
 ## Your Task
 
 Your task is to build a Node.js command-line application that takes in user input to generate a logo and save it as an [SVG file](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics). The application prompts the user to select a color and shape, provide text for the logo, and save the generated SVG to a `.svg` file.
