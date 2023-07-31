@@ -13,6 +13,9 @@ https://github.com/YJPuk/SVGLogoMaker/blob/main/walkthrough.gif
 ![Square](./Samples/logo2.svg)
 ![Triangle](./Samples/logo3.svg)
 
+https://github.com/YJPuk/SVGLogoMaker/blob/main/Samples/logo1.svg
+https://github.com/YJPuk/SVGLogoMaker/blob/main/Samples/logo2.svg
+https://github.com/YJPuk/SVGLogoMaker/blob/main/Samples/logo3.svg
 
 <hr>
 
