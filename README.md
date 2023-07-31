@@ -8,8 +8,8 @@ https://github.com/YJPuk/SVGLogoMaker/blob/main/walkthrough.gif
 # Walkthrough Gif:
 ![User Inputs via CLI.](./walkthrough.gif)
 
-# Sample Logo file:
-https://github.com/YJPuk/SVGLogoMaker/blob/main/logo.svg
+# Sample Logo file: 
+![Sample](./logo.svg)
 
 
 <hr>
